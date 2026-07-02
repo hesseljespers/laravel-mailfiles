@@ -1,0 +1,13 @@
+includes:
+    - phpstan-baseline.neon
+
+parameters:
+    level: 5
+    treatPhpDocTypesAsCertain: false
+    paths:
+        - src
+        - config
+    tmpDir: build/phpstan
+    ignoreErrors:
+        # Using env() in a package config file is the documented convention.
+        - '#Called .env. outside of the config directory#'

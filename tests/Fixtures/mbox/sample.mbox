@@ -1,0 +1,16 @@
+From alice@example.com Mon Jan 01 09:00:00 2024
+From: Alice <alice@example.com>
+To: bob@example.com
+Subject: First message
+Content-Type: text/plain
+
+Hello Bob.
+>From here the quoted line was escaped.
+
+From carol@example.com Tue Jan 02 10:00:00 2024
+From: Carol <carol@example.com>
+To: dave@example.com
+Subject: Second message
+Content-Type: text/plain
+
+Hi Dave.

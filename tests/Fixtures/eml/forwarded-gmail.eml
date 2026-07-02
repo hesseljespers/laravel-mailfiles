@@ -1,0 +1,21 @@
+From: Bob Forwarder <bob@example.com>
+To: Carol Recipient <carol@example.com>
+Subject: Fwd: Project update
+Date: Wed, 02 Jul 2025 10:00:00 +0200
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+
+Hi Carol,
+
+Thought you should see this.
+
+Bob
+
+---------- Forwarded message ---------
+From: Alice Original <alice@origin.example>
+Date: Mon, 30 Jun 2025 09:00:00 +0200
+Subject: Project update
+To: Bob Forwarder <bob@example.com>
+Cc: Dan Watcher <dan@example.com>
+
+The project is on track for the July release.

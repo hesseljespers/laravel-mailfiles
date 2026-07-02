@@ -1,0 +1,77 @@
+From: Jane Sender <jane@example.com>
+To: bob@example.com
+Subject: Q3 report attached
+Date: Tue, 01 Jul 2025 09:30:00 +0200
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="MIXED"
+
+This is a multi-part message in MIME format.
+--MIXED
+Content-Type: multipart/related; boundary="RELATED"
+
+--RELATED
+Content-Type: multipart/alternative; boundary="ALT"
+
+--ALT
+Content-Type: text/plain; charset=UTF-8
+
+Hi Bob,
+
+Please find the Q3 report attached.
+
+Best,
+Jane
+--ALT
+Content-Type: text/html; charset=UTF-8
+
+<html><body>
+<p>Hi Bob,</p>
+<p>Please find the Q3 report attached.</p>
+<p>Best,<br><img src="cid:logo" alt="Acme"></p>
+<p>
+  <a href="https://linkedin.com/acme"><img src="cid:linkedin" alt="LinkedIn"></a>
+  <a href="https://twitter.com/acme"><img src="cid:twitter" alt="Twitter"></a>
+</p>
+<img src="cid:pixel" width="1" height="1" alt="">
+</body></html>
+--ALT--
+--RELATED
+Content-Type: image/png; name="logo.png"
+Content-Transfer-Encoding: base64
+Content-ID: <logo>
+Content-Disposition: inline; filename="logo.png"
+
+iVBORw0KGgoAAAANSUhEUg==
+--RELATED
+Content-Type: image/png; name="linkedin.png"
+Content-Transfer-Encoding: base64
+Content-ID: <linkedin>
+Content-Disposition: attachment; filename="linkedin.png"
+
+iVBORw0KGgoAAAANSUhEUg==
+--RELATED
+Content-Type: image/gif; name="twitter.gif"
+Content-Transfer-Encoding: base64
+Content-ID: <twitter>
+
+R0lGODdhAQABAAAAACw=
+--RELATED
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-ID: <pixel>
+
+R0lGODdhAQABAAAAACw=
+--RELATED--
+--MIXED
+Content-Type: application/pdf; name="Q3-report.pdf"
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename="Q3-report.pdf"
+
+JVBERi0xLjQKJcOkw7zDtsOfCg==
+--MIXED
+Content-Type: image/jpeg; name="team-photo.jpg"
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename="team-photo.jpg"
+
+/9j/4AAQSkZJRgABAQEAYABgAAD/2wBD
+--MIXED--
