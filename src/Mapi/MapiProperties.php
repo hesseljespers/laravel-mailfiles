@@ -202,7 +202,8 @@ final class MapiProperties
     {
         $low = $this->u32($data, $offset);
         $high = $this->u32($data, $offset + 4);
-
-        return $low + ($high * 4294967296);
+        
+        #fix for Melloww\MailFiles\Mapi\MapiProperties::u64(): Return value must be of type int, float returned
+        return ($high << 32) | $low;
     }
 }
